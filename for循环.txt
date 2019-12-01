@@ -1,0 +1,15 @@
+package main
+
+import (
+	"fmt"
+)
+
+func for2()  {
+	for i := 0; i <5; i++ {
+		fmt.Println(123)
+	}
+
+}
+func main()  {
+	for2()
+}
