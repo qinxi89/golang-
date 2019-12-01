@@ -1,0 +1,24 @@
+package main
+
+import "fmt"
+
+func main()  {
+	fmt.Println("===================")
+	fmt.Println("欢迎进入身份认证系统。")
+	fmt.Println("===================")
+	fmt.Println("请输入用户名：")
+	var name string
+	_,_ = fmt.Scan(&name)
+	fmt.Println("请输入密码：")
+	var password string
+	_,_ = fmt.Scan(&password)
+
+	if name=="root" && password=="admin" {
+		fmt.Println("登录成功")
+	}else if name == "root" || password == "admin" {
+		fmt.Println("你输入的用户名和密码不正确")
+	}else  {
+		fmt.Println("请重新登录")
+	}
+
+}
