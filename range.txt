@@ -1,0 +1,17 @@
+package main
+
+import (
+	"fmt"
+
+)
+
+func main()  {
+	s := "abc"
+	//接收下标
+	for i := range s  {
+		fmt.Println("下标=%d,值=%c\n", i, s[i])
+	}
+	for i ,c := range s {
+		fmt.Println("下标=%d,值=%c\n", i, s[i], c)
+	}
+}

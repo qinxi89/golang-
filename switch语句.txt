@@ -1,0 +1,31 @@
+package main
+
+import "fmt"
+
+func grade(score int)  string {
+	//定义空串
+	g := ""
+	switch  {
+	case score < 0 || score >100:
+		g = "输入错误"
+	case score < 60:
+		g = "F"
+	case score < 80:
+		g = "C"
+	case score < 90:
+		g = "B"
+	case score < 100:
+		g = "A"
+	default:
+		g = "其他"
+	}
+	return g
+
+}
+func main()  {
+	fmt.Println(
+		grade(0),
+		grade(59),
+		grade(82),
+		grade(-3))
+}
