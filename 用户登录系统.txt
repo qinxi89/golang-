@@ -8,7 +8,7 @@ func main()  {
 	fmt.Println("===================")
 	fmt.Println("请输入用户名：")
 	var name string
-	_,_ = fmt.Scan(&name)
+	_,_ = fmt.Scan(&name)      //请问这里的“_”是什么意思？
 	fmt.Println("请输入密码：")
 	var password string
 	_,_ = fmt.Scan(&password)
